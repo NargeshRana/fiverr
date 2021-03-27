@@ -1,0 +1,602 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiverr Clone</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- OwlCarousel2 -->
+    <link rel="stylesheet" href="OwlCarousel2/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2/css/owl.theme.default.min.css">
+</head>
+
+<body>
+
+    <!-- As a link -->
+    <nav class="navigation p-lg-3">
+        <div class="container">
+            <a class="navbar-brand" href="#"><span>Vibe</span><span>27</span></a>
+        </div>
+    </nav>
+
+    <video loop autoplay muted class="top_header_video_sec">
+        <source type="video/mp4" media="(min-width: 1160px)"
+            src="https://media.istockphoto.com/videos/relaxing-after-a-long-working-day-video-id1212764468">
+        <source type="video/mp4" media="(min-width: 900px)"
+            src="https://media.istockphoto.com/videos/relaxing-after-a-long-working-day-video-id1212764468">
+        <source type="video/mp4" media="(min-width: 600px)"
+            src="https://media.istockphoto.com/videos/relaxing-after-a-long-working-day-video-id1212764468">
+    </video>
+
+    <section class="jumbotron">
+        <div class="container pt-lg-5 px-lg-4">
+            <div class="row">
+                <div class="col-12 col-lg-6 my-4 mb-lg-5 content_sec">
+                    <div>
+                        <h1>Connect with the <span>Purpose</span></h1>
+                        <p class="my-lg-3">
+                            There are 27 Personality Types in the world! Discover your Personality type and match your
+                            VIBES with someone you already know or a someone you have started getting to know for
+                            relationship, business, travel or just for friendship.
+                        </p>
+                        <div class="btn_grp mt-3">
+                            <a href="#" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">Join Fiver Business</a>
+                            <a href="#" class="btn-link mx-4"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                    <path fill-rule="evenodd"
+                                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+                                </svg> <span>Take a look inside</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mb-4 mb-lg-5 content_sec">
+                    <h5 class="mb-3 mb-md-5 text-center">Explore your Vibes NOW!</h5>
+                    <form class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <label for="dateOfBirth" class="form-label">Enter your DOB</label>
+                            <input type="date" class="form-control" id="dateOfBirth">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="timeOfBirth" class="form-label">Enter your Time of Birth</label>
+                            <input type="time" class="form-control" id="timeOfBirth" value="00:00">
+                        </div>
+                        <div class="col-12">
+                            <label for="placeOfBirth" class="form-label">Enter your Place of birth</label>
+                            <input type="text" class="form-control" id="placeOfBirth"
+                                placeholder="Enter your Place of birth">
+                        </div>
+                        <div class="col-12">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#loginFrom"
+                                class="btn btn-primary">Submit</a>
+                        </div>
+                    </form>
+                    <!-- <hr>
+                    <h5 class="mb-3 text-center">Login with</h5>
+                    <div class="text-center">
+                        <a href="#" class="my-auto text-decoration-none">
+                            <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-512.png"
+                                width="45px" alt="">
+                        </a>
+                        <span class="mx-3 my-auto">or</span>
+                        <a href="#" class="my-auto text-decoration-none">
+                            <img src="https://icons-for-free.com/iconfiles/png/512/phone+send+sms+icon-1320191835303044284.png"
+                                width="50px" alt="">
+                        </a>
+                    </div> -->
+
+                    <!-- Login form Modal -->
+                    <div class="modal fade" id="loginFrom" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="loginFromLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content loginFromModal">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="loginFromLabel">Login</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+
+                                    <form>
+                                        <div class="mb-3 row">
+                                            <label for="mobileNumber" class="col-12 col-form-label">Enter Mobile
+                                                Number</label>
+                                            <div class="col-12">
+                                                <input type="password" class="form-control" id="mobileNumber"
+                                                    placeholder="+91-9876543210">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="submit" value="Send OTP" class="btn btn-primary w-100">
+                                        </div>
+                                    </form>
+
+                                    <hr>
+                                    <h5 class="mb-3 text-center">Login with</h5>
+                                    <div class="text-center">
+                                        <a href="#" class="my-auto text-decoration-none">
+                                            <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-512.png"
+                                                width="45px" alt="">
+                                        </a>
+                                        <span class="mx-3 my-auto">or</span>
+                                        <a href="#" class="my-auto text-decoration-none">
+                                            <img src="https://icons-for-free.com/iconfiles/png/512/phone+send+sms+icon-1320191835303044284.png"
+                                                width="50px" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_bottom">
+            <a href="#trust_section"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-arrow-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                </svg></a>
+        </div>
+    </section>
+
+    <section class="app_store_container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-4 my-auto mb-4 mb-md-0">
+                    <div class="app-icon">
+                        <img src="icon-AppStore_lg30tv.png" alt="">
+                        <img src="icon-GooglePlay_1_zixjxl.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 my-auto mb-4 mb-md-0">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter your email address"
+                            aria-label="Enter your email address" aria-describedby="send-link">
+                        <button class="btn btn-primary" type="button" id="send-link">Send Me</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 content my-auto mb-4 mb-md-0">
+                    <p><b>Invite your friends to get priority access</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="partners_container" id="trust_section">
+        <h3 class="text-dark"><b>Trusted by:</b></h3><br>
+        <div class="partners">
+            <div><img
+                    src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/business_onboarding_perseus/apps/logo-loreal.f82f679.svg"
+                    alt=""></div>
+            <div><img
+                    src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/business_onboarding_perseus/apps/logo-unilever.4763ea2.svg"
+                    alt=""></div>
+            <div><img
+                    src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/business_onboarding_perseus/apps/logo-bytedance.9d1b921.svg"
+                    alt=""></div>
+            <div><img
+                    src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/business_onboarding_perseus/apps/logo-888.ebcbee8.svg"
+                    alt=""></div>
+            <div><img
+                    src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/business_onboarding_perseus/apps/logo-myheritage.81af0fd.svg"
+                    alt=""></div>
+        </div>
+    </section> -->
+
+    <section class="jumbotron py-5 footer">
+        <div class="container text-center">
+            <div class="container_text_animation">
+                <p>Manage <span class="typed-text"></span><span class="cursor">&nbsp;</span> <br> from anywhere</p>
+            </div><br>
+            <a href="#" class="btn btn-primary">Join Fiver Business</a>
+        </div>
+    </section>
+
+    <!-- <section class="catlogs_sec my-lg-5">
+        <div class="text-center">
+            <h1>Access a catalog of verified, <br> trusted talent</h1>
+            <p>Expand your team as needed with experienced <br> freelancers already vetted for business projects.</p>
+        </div>
+        <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1309,dpr_1.0/v1/attachments/generic_asset/asset/5c7b9db40542ad1221499f7298209ae0-1600019528468/trusted-talent-desktop-1309-x1.png"
+            class="img-fluid" alt="">
+    </section> -->
+
+    <section class="odd_evven_content_sec">
+        <div class="container">
+            <div class="row my-lg-5 my-3 py-3 py-lg-5 my-3 py-3">
+                <div class="col-12 col-md-6 order-lg-2">
+                    <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_660,dpr_1.0/v1/attachments/generic_asset/asset/bc05537ddbcae4f68ad0b17659b45dd0-1606732443796/right-talent-desktop-660-x2.png"
+                        class="img-fluid" alt="">
+                </div>
+                <div class="col-12 col-md-6 px-lg-5 order-lg-1">
+                    <h1 class="mb-0">Vibe Personality</h1>
+                    <p class="">VP is for you to discover your personality type and get connected with the right ones.
+                        Invite your friends, business associates and loved ones to match your vibes with them.</p>
+                    <div class="btn_grp">
+                        <a href="#" class="btn btn-primary">Join Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-lg-5 my-3 py-3 py-lg-5 my-3 py-3">
+                <div class="col-12 col-md-6 order-lg-1">
+                    <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_660,dpr_1.0/v1/attachments/generic_asset/asset/5364183d1377de2e002df16f78f56ef3-1599950021826/scattered-feedback-desktop-660-x2.png"
+                        class="img-fluid" alt="">
+                </div>
+                <div class="col-12 col-md-6 px-lg-5 order-lg-2">
+                    <h1>Vibe Relationships</h1>
+                    <p>VR is for those committed ones who are up for any relationship whether it is serious Dating, Life
+                        partner, Spiritual Partner or Friend in need! Connect with those who match your persona!</p>
+                    <div class="btn_grp">
+                        <a href="#" class="btn btn-primary">Join Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-lg-5 my-3 py-3 py-lg-5 my-3 py-3">
+                <div class="col-12 col-md-6 order-lg-2">
+                    <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_660,dpr_1.0/v1/attachments/generic_asset/asset/5364183d1377de2e002df16f78f56ef3-1599950021839/simplify-budgeting-desktop-660-x2.png"
+                        class="img-fluid" alt="">
+                </div>
+                <div class="col-12 col-md-6 px-lg-5 order-lg-1">
+                    <h1>Vibe Business</h1>
+                    <p>VB is for those who are serious about the business and are looking for investor/investment,
+                        Co-Founder, Freelancer, Skill Barter etc. Persona match leads to better productivity.</p>
+                    <div class="btn_grp">
+                        <a href="#" class="btn btn-primary">Join Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-lg-5 my-3 py-3 py-lg-5 my-3 py-3">
+                <div class="col-12 col-md-6 order-lg-1">
+                    <img src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_660,dpr_1.0/v1/attachments/generic_asset/asset/5364183d1377de2e002df16f78f56ef3-1599950021826/scattered-feedback-desktop-660-x2.png"
+                        class="img-fluid" alt="">
+                </div>
+                <div class="col-12 col-md-6 px-lg-5 order-lg-2">
+                    <h1>Vibe Travel</h1>
+                    <p>VT is for those who are serious travelers and like to hunt for another traveler , connect with
+                        local guides or looking for secret party places. Astro-cartography makes it beautiful and fun.
+                    </p>
+                    <div class="btn_grp">
+                        <a href="#" class="btn btn-primary">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our_plans_sec px-0 my-5 py-lg-5">
+        <div class="container">
+            <h1>Now your team really can do it all</h1>
+        </div>
+        <div class="links">
+            <a href="#">Committed Relationship</a>
+            <a href="#">Marriage</a>
+            <a href="#">Friends</a>
+            <a href="#">Investor</a>
+            <a href="#">Mentor</a>
+            <a href="#">Co Founder Advisor</a>
+            <a href="#">VC</a>
+            <a href="#">Accelerator Start-Up</a>
+            <a href="#">Start-Up Visa</a>
+            <a href="#">Freelancer</a>
+            <a href="#">Nomads</a>
+            <a href="#">Solo Traveler</a>
+            <a href="#">Family</a>
+            <a href="#">Traveler</a>
+            <a href="#">Local Guide</a>
+            <a href="#">Skill Barter</a>
+            <a href="#">Internships</a>
+            <a href="#">Networking</a>
+        </div>
+    </section>
+
+    <section class="plans_card_sec my-5 d-none">
+        <div class="container px-lg-4">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h1 class="sec_title mb-4">A whole year to fall in love with Fiverr Business</h1>
+                    <ul>
+                        <li><span class="my-auto mr-3"><img
+                                    src="https://pradeepsuthar.github.io/BotSuite_splixcube/site-assets/images/icon__checked--green.svg"
+                                    alt=""></span>
+                            <p>Personal Business Success Manager</p>
+                        </li>
+                        <li><span class="my-auto mr-3"><img
+                                    src="https://pradeepsuthar.github.io/BotSuite_splixcube/site-assets/images/icon__checked--green.svg"
+                                    alt=""></span>
+                            <p>Curated freelancer catalog</p>
+                        </li>
+                        <li><span class="my-auto mr-3"><img
+                                    src="https://pradeepsuthar.github.io/BotSuite_splixcube/site-assets/images/icon__checked--green.svg"
+                                    alt=""></span>
+                            <p>Tools to make collaboration easy</p>
+                        </li>
+                        <li><span class="my-auto mr-3"><img
+                                    src="https://pradeepsuthar.github.io/BotSuite_splixcube/site-assets/images/icon__checked--green.svg"
+                                    alt=""></span>
+                            <p>Customized management and budget flow</p>
+                        </li>
+                        <li><span class="my-auto mr-3"><img
+                                    src="https://pradeepsuthar.github.io/BotSuite_splixcube/site-assets/images/icon__checked--green.svg"
+                                    alt=""></span>
+                            <p>Payment methods suitable for business</p>
+                        </li>
+                        <li><span class="my-auto mr-3"><img
+                                    src="https://pradeepsuthar.github.io/BotSuite_splixcube/site-assets/images/icon__checked--green.svg"
+                                    alt=""></span>
+                            <p>Up to 50 users included <br> Need more than 50 users? <span><a href="#"
+                                        class="link">Contact us <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                            height="16" fill="currentColor" class="bi bi-chevron-right"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                        </svg></a></span></p>
+                        </li>
+                        <li>
+                            <p></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 px-lg-5">
+                    <div class="card text-center mx-lg-5">
+                        <div class="card-header">
+                            <h1 class="text-decoration-line-through">$149 annually</h1>
+                        </div>
+                        <div class="card-body">
+                            <div class="price">
+                                <sup>$</sup>
+                                <b>0</b>
+                            </div>
+                            <div class="duration">
+                                <small>for the first year</small>
+                            </div>
+                            <a href="#" class="btn btn-primary my-3">Create a Free Account</a>
+                            <p>No credit card required</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Questions_sec my-lg-5 py-lg-5">
+        <div class="container">
+            <div class="heading text-center">
+                <h1>Common Questions</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-8 mx-auto">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is hidden by default,
+                                    until the
+                                    collapse plugin adds the appropriate classes that we use to style each element.
+                                    These
+                                    classes control the overall appearance, as well as the showing and hiding via CSS
+                                    transitions. You can modify any of this with custom CSS or overriding our default
+                                    variables.
+                                    It's also worth noting that just about any HTML can go within the
+                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Accordion Item #2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                    until
+                                    the collapse plugin adds the appropriate classes that we use to style each element.
+                                    These
+                                    classes control the overall appearance, as well as the showing and hiding via CSS
+                                    transitions. You can modify any of this with custom CSS or overriding our default
+                                    variables.
+                                    It's also worth noting that just about any HTML can go within the
+                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the
+                                    collapse plugin adds the appropriate classes that we use to style each element.
+                                    These
+                                    classes control the overall appearance, as well as the showing and hiding via CSS
+                                    transitions. You can modify any of this with custom CSS or overriding our default
+                                    variables.
+                                    It's also worth noting that just about any HTML can go within the
+                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="jumbotron py-5 footer">
+        <div class="container-fluid pt-3 px-4 footer_text_centent">
+            <div>
+                <h4>fiverr business.</h4>
+            </div>
+            <div><a href="#">Privacy Policy</a> |</div>
+            <div><a href="#">Terms of Service</a></div>
+            <div>
+                <p class="my-0 py-0">© Fiverr International Ltd. 2020</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content image_gallery_modal">
+                <div class="modal-header">
+                    <button type="button" class="close_btn" data-bs-dismiss="modal" aria-label="Close">
+                        Close <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                            class="bi bi-x" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Set up your HTML -->
+                    <div class="owl-carousel">
+                        <div class="slide_content">
+                            <div class="content">
+                                <h5>Brainport for you</h5>
+                                <p>Whether you are studying, working or having a company here, Brainport Eindhoven
+                                    offers limitless opportunities for growth. Your success depends on the way you
+                                    overcome your challenges. Please contact Brainport if you need any support. We will
+                                    help you gain more knowledge and new perspectives or we will just answer your
+                                    questions.</p>
+                            </div>
+                        </div>
+                        <div class="slide_card">
+                            <div class="slide_card_content">
+                                <h5>Brainport for you</h5>
+                                <p>Whether you are studying, working or having a company here, Brainport Eindhoven
+                                    offers limitless opportunities for growth.</p>
+                            </div>
+                            <img src="https://cdn.pixabay.com/photo/2020/07/17/06/41/feline-5413170_960_720.jpg"
+                                class="img-fluid" alt="">
+                        </div>
+                        <div class="slide_card">
+                            <div class="slide_card_content">
+                                <h5>Brainport for you</h5>
+                                <p>Whether you are studying, working or having a company here, Brainport Eindhoven
+                                    offers limitless opportunities for growth.</p>
+                            </div>
+                            <img src="https://cdn.pixabay.com/photo/2020/07/17/06/41/feline-5413170_960_720.jpg"
+                                class="img-fluid" alt="">
+                        </div>
+                        <div class="slide_card">
+                            <div class="slide_card_content">
+                                <h5>Brainport for you</h5>
+                                <p>Whether you are studying, working or having a company here, Brainport Eindhoven
+                                    offers limitless opportunities for growth.</p>
+                            </div>
+                            <img src="https://cdn.pixabay.com/photo/2020/07/17/06/41/feline-5413170_960_720.jpg"
+                                class="img-fluid" alt="">
+                        </div>
+                        <div class="slide_card">
+                            <div class="slide_card_content">
+                                <h5>Brainport for you</h5>
+                                <p>Whether you are studying, working or having a company here, Brainport Eindhoven
+                                    offers limitless opportunities for growth.</p>
+                            </div>
+                            <img src="https://cdn.pixabay.com/photo/2020/07/17/06/41/feline-5413170_960_720.jpg"
+                                class="img-fluid" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // tetxt animation
+        const typedTextSpan = document.querySelector(".typed-text");
+        const cursorSpan = document.querySelector(".cursor");
+
+        const textArray = ["projects", "freelancers", "team"];
+        const typingDelay = 200;
+        const erasingDelay = 100;
+        const newTextDelay = 2000; // Delay between current and next text
+        let textArrayIndex = 0;
+        let charIndex = 0;
+
+        function type() {
+            if (charIndex < textArray[textArrayIndex].length) {
+                if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingDelay);
+            }
+            else {
+                cursorSpan.classList.remove("typing");
+                setTimeout(erase, newTextDelay);
+            }
+        }
+
+        function erase() {
+            if (charIndex > 0) {
+                if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+                typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, erasingDelay);
+            }
+            else {
+                cursorSpan.classList.remove("typing");
+                textArrayIndex++;
+                if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+                setTimeout(type, typingDelay + 1100);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
+            if (textArray.length) setTimeout(type, newTextDelay + 250);
+        });
+    </script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- OwlCarousel2 -->
+    <script src="OwlCarousel2/js/jquery.min.js"></script>
+    <script src="OwlCarousel2/js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1.2
+                },
+                600: {
+                    items: 2
+                },
+                960: {
+                    items: 3
+                }
+            }
+        })
+
+    </script>
+</body>
+
+</html>
